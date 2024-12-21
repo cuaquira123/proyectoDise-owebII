@@ -1,0 +1,75 @@
+<div class="container mt-5">
+  <div class="row">
+    <!-- Imagen a la izquierda -->
+    <div class="col-md-6 d-none d-md-block">
+      <img src="imagentrabajadores/registro.png" alt="Imagen de registro" class="img-fluid" style="border-radius: 10px;">
+    </div>
+
+    <!-- Formulario a la derecha -->
+    <div class="col-md-6">
+      <h2 class="text-center mb-4">Registro de Cliente</h2>
+
+      <!-- Formulario -->
+      <form (ngSubmit)="registerUser()" #registerForm="ngForm">
+        <!-- Tipo de Cliente -->
+        <div class="mb-3">
+          <label for="tipoCliente" class="form-label">Tipo de Cliente</label>
+          <select 
+            [(ngModel)]="tipoCliente" 
+            name="tipoCliente" 
+            id="tipoCliente" 
+            class="form-select" 
+            required>
+            <option value="" disabled selected>Seleccione el tipo de cliente</option>
+            <option value="natural">Cliente Natural</option>
+            <option value="empresa">Empresa</option>
+          </select>
+        </div>
+
+        <!-- Campos comunes -->
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo</label>
+          <input type="email" id="correo" name="correo" [(ngModel)]="correo" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="telefono" class="form-label">Teléfono</label>
+          <input type="text" id="telefono" name="telefono" [(ngModel)]="telefono" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" id="password" name="password" [(ngModel)]="password" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="confirmPassword" class="form-control" required>
+        </div>
+
+        <!-- Campos adicionales para Empresa -->
+        <div *ngIf="tipoCliente === 'empresa'">
+          <div class="mb-3">
+            <label for="encargadoNombre" class="form-label">Nombre del Encargado de Empresa</label>
+            <input type="text" id="encargadoNombre" name="encargadoNombre" [(ngModel)]="encargadoNombre" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label for="encargadoApellido" class="form-label">Apellido del Encargado de Empresa</label>
+            <input type="text" id="encargadoApellido" name="encargadoApellido" [(ngModel)]="encargadoApellido" class="form-control">
+          </div>
+        </div>
+
+        <!-- Botón de registro -->
+        <button type="submit" class="btn btn-success w-100">Registrar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+  

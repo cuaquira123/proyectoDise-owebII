@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+  }
+  .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+  }
+  .logo-img {
+    width: 200px; /* Ajusta el ancho del logo acercade */
+    height: auto; /* Mantiene la proporción del logo */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    box-shadow: 2px 2px 5px rgba(1, 1, 1, 1.1); /* Sombra suave */
+  }
+  /* Estilo para el logo grande pagina de inicio */
+.logo-large {
+  width: 300px; /* Ajusta el tamaño del logo según sea necesario */
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(1, 1, 1, 1.2); /* Sombra elegante */
+}
+
+
+
+
+
+
+  

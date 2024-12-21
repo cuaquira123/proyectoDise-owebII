@@ -1,0 +1,23 @@
+/* Título estilizado */
+h1 {
+    font-family: 'Heading 2'; /* Cambia la fuente si lo prefieres */
+    font-size: 2.5rem;
+    text-align: center;
+    color: #020109; /* Color del texto */
+  }
+  .acerca-de-container {
+    background-color: #e2be1e; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados (opcional) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
+  .logo-img {
+    width: 150px; /* Ajustar el tamaño del logo */
+    height: 60px;
+  }
+  
+  .text-white {
+    color: #221010; /* Texto blanco */
+  }
+  

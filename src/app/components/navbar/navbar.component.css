@@ -1,0 +1,110 @@
+/* Estilo base para los botones perfil cliente */
+.nav-btn {
+    border-radius: 10px; /* Bordes redondeados */
+    margin-right: 10px; /* Espacio entre botones */
+    padding: 8px 16px; /* Espaciado interno */
+    font-weight:  500; /* Letras más gruesas */
+    box-shadow: 0 4px 6px rgba(231, 225, 225, 0.1); /* Sombra ligera */
+    transition: all 0.3s ease; /* Transición suave */
+  }
+  
+  /* Hover personalizado para los botones */
+  .nav-btn:hover {
+    background-color: #646866; /* Mismo color de fondo que en Acerca de */
+    color: rgb(20, 19, 19); /* Texto en blanco */
+    border-color: #e7ebea; /* Borde del mismo color */
+    box-shadow: 0 4px 10px rgba(235, 232, 232, 0.2); /* Sombra más pronunciada */
+  }
+
+  /* Estilo base para los botones lista de trabajadores */
+  .nav-btnlis {
+    border-radius: 10px; /* Bordes redondeados */
+    margin-right: 10px; /* Espacio entre botones */
+    padding: 8px 16px; /* Espaciado interno */
+    font-weight:  500; /* Letras más gruesas */
+    box-shadow: 0 4px 6px rgba(231, 225, 225, 0.1); /* Sombra ligera */
+    transition: all 0.3s ease; /* Transición suave */
+  }
+  
+  /* Hover personalizado para los botones */
+  .nav-btnlis:hover {
+    background-color: #97989b; /* Mismo color de fondo que en Acerca de */
+    color: rgb(25, 25, 25); /* Texto en blanco */
+    border-color: #e7ebea; /* Borde del mismo color */
+    box-shadow: 0 4px 10px rgba(235, 232, 232, 0.1); /* Sombra más pronunciada */
+  }
+
+    /* Estilo base para los botones registro  de trabajadores */
+    .nav-btnre {
+        border-radius: 10px; /* Bordes redondeados */
+        margin-right: 10px; /* Espacio entre botones */
+        padding: 8px 16px; /* Espaciado interno */
+        font-weight:  500; /* Letras más gruesas */
+        box-shadow: 0 4px 6px rgba(231, 225, 225, 0.2); /* Sombra ligera */
+        transition: all 0.3s ease; /* Transición suave */
+      }
+      
+      /* Hover personalizado para los botones */
+      .nav-btnre:hover {
+        background-color: #a9abaf; /* Mismo color de fondo que en Acerca de */
+        color: rgb(65, 64, 64); /* Texto en blanco */
+        border-color: #e7ebea; /* Borde del mismo color */
+        box-shadow: 0 4px 10px rgba(235, 232, 232, 0.2); /* Sombra más pronunciada */
+      }
+
+      /* Estilo base para los botones acerca de  */
+    .nav-btnac {
+        border-radius: 10px; /* Bordes redondeados */
+        margin-right: 10px; /* Espacio entre botones */
+        padding: 8px 16px; /* Espaciado interno */
+        font-weight:  500; /* Letras más gruesas */
+        box-shadow: 0 4px 6px rgba(231, 225, 225, 0.2); /* Sombra ligera */
+        transition: all 0.3s ease; /* Transición suave */
+      }
+      
+      /* Hover personalizado para los botones */
+      .nav-btnac:hover {
+        background-color: #cacbce; /* Mismo color de fondo que en Acerca de */
+        color: rgb(81, 81, 81); /* Texto en blanco */
+        border-color: #e7ebea; /* Borde del mismo color */
+        box-shadow: 0 4px 10px rgba(235, 232, 232, 0.2); /* Sombra más pronunciada */
+      }
+
+       /* Estilo base para los botones inicio */
+    .nav-btnin {
+        border-radius: 10px; /* Bordes redondeados */
+        margin-right: 10px; /* Espacio entre botones */
+        padding: 8px 16px; /* Espaciado interno */
+        font-weight: 500; /* Letras más gruesas */
+        box-shadow: 0 4px 6px rgba(231, 225, 225, 0.2); /* Sombra ligera */
+        transition: all 0.3s ease; /* Transición suave */
+      }
+      
+      /* Hover personalizado para los botones */
+      .nav-btnin:hover {
+        background-color: #fafafa; /* Mismo color de fondo que en Acerca de */
+        color: rgb(80, 80, 80); /* Texto en blanco */
+        border-color: #e7ebea; /* Borde del mismo color */
+        box-shadow: 0 4px 10px rgba(235, 232, 232, 0.2); /* Sombra más pronunciada */
+      }
+
+          /* Estilo base para los botones inicio sesion */
+    .nav-btninc {
+        border-radius: 10px; /* Bordes redondeados */
+       
+        margin-left: 0 ; /* Elimina márgenes hacia la izquierda */
+        margin-right: 250; /* Alinea el botón a la izquierda */
+        padding: 8px 16px; /* Espaciado interno */
+        font-weight: 500; /* Letras más gruesas */
+        box-shadow: 0 4px 6px rgba(231, 225, 225, 0.2); /* Sombra ligera */
+        transition: all 0.3s ease; /* Transición suave */
+      }
+      
+      /* Hover personalizado para los botones */
+      .nav-btninc:hover {
+        background-color: #00c103; /* Mismo color de fondo que en Acerca de */
+        color: rgb(251, 250, 250); /* Texto en blanco */
+        border-color: #e7ebea; /* Borde del mismo color */
+        box-shadow: 0 4px 10px rgba(235, 232, 232, 0.2); /* Sombra más pronunciada */
+      }
+  

@@ -1,0 +1,66 @@
+/* Estilo del título */
+h1 {
+  font-family: 'Sketchy', cursive;
+  color: #050ccb; /* Cambia según el color que prefieras */
+}
+
+/* Estilo para las tarjetas (cards) */
+.card {
+  width: 300px; /* Ancho fijo para todas las tarjetas */
+  height: 400px; /* Altura fija para todas las tarjetas */
+  margin: 10px auto; /* Espaciado y centrado */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+  overflow: hidden; /* Evita que el contenido sobresalga */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye el contenido */
+}
+
+/* Imagen dentro de las tarjetas */
+.card img {
+  width: 100%; /* La imagen ocupa el ancho completo de la card */
+  height: 200px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+  border-radius: 10px 10px 0 0; /* Bordes redondeados solo arriba */
+}
+
+/* Estilo del título y texto de la tarjeta */
+.card-title {
+  font-family: 'Sketchy', cursive;
+  font-size: 1.2rem;
+  margin: 10px 0; /* Espaciado */
+  text-align: center;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #1e0ce0;
+  padding: 0 10px; /* Espaciado horizontal */
+  text-align: center;
+}
+
+/* Botón dentro de la tarjeta */
+.card .btn {
+  margin: 10px auto; /* Centrado */
+  display: block;
+  width: 80%; /* Ancho del botón */
+}
+
+/* Contenedor para alinear múltiples tarjetas */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Alinea las tarjetas y permite varias filas */
+  justify-content: center; /* Centra las tarjetas */
+  gap: 20px; /* Espacio entre tarjetas */
+}
+
+/* Logo centrado */
+.logo-centrado {
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

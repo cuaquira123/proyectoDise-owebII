@@ -1,0 +1,109 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-4">Registro de Trabajadores</h2>
+  <form [formGroup]="workerForm" (ngSubmit)="onSubmit()" class="p-4 border rounded">
+    <!-- Nombre -->
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre Completo</label>
+      <input
+        type="text"
+        id="nombre"
+        formControlName="nombre"
+        class="form-control"
+        required
+      />
+    </div>
+
+    <!-- Edad -->
+    <div class="mb-3">
+      <label for="edad" class="form-label">Edad</label>
+      <input
+        type="text"
+        id="edad"
+        formControlName="edad"
+        class="form-control"
+        required
+      />
+    </div>
+
+    <!-- Carnet de Identidad -->
+    <div class="mb-3">
+      <label for="carnet_identidad" class="form-label">Carnet de Identidad</label>
+      <input
+        type="text"
+        id="carnet_identidad"
+        formControlName="carnet_identidad"
+        class="form-control"
+        required
+      />
+    </div>
+
+    <!-- Teléfono -->
+    <div class="mb-3">
+      <label for="telefono" class="form-label">Teléfono</label>
+      <input
+        type="text"
+        id="telefono"
+        formControlName="telefono"
+        class="form-control"
+        required
+      />
+    </div>
+
+    <!-- Rubro -->
+    <div class="mb-3">
+      <label for="rubro" class="form-label">Rubro</label>
+      <select
+        id="rubro"
+        formControlName="rubro"
+        class="form-select"
+        required
+      >
+        <option value="" disabled selected>Selecciona un rubro</option>
+        <option value="Construcción">Construcción</option>
+        <option value="Doméstica">Doméstica</option>
+        <option value="Soldador">Soldador</option>
+        <option value="Carpintería">Carpintería</option>
+        <option value="Electricidad">Electricidad</option>
+        <option value="Plomería">Plomería</option>
+        <option value="Jardinería">Jardinería</option>
+        <option value="Veterinaria">Veterinaria</option>
+        <option value="Tramitador">Tramitador</option>
+        <option value="Transporte">Transporte</option>
+        <option value="Gastronomía">Gastronomía</option>
+        <option value="Comercio">Comercio</option>
+        <option value="Educación">Educación</option>
+        <option value="Tecnología">Tecnología</option>
+      </select>
+    </div>
+
+    <!-- Datos de Contacto -->
+    <div class="mb-3">
+      <label for="contacto" class="form-label">Datos de Contacto</label>
+      <input
+        type="text"
+        id="contacto"
+        formControlName="contacto"
+        class="form-control"
+        placeholder="Correo electrónico o teléfono"
+        required
+      />
+    </div>
+
+    <!-- Habilidades -->
+    <div class="mb-3">
+      <label for="habilidades" class="form-label">Habilidades</label>
+      <textarea
+        id="habilidades"
+        formControlName="habilidades"
+        class="form-control"
+        rows="3"
+        required
+      ></textarea>
+    </div>
+
+    <!-- Botón de Enviar -->
+    <button type="submit" class="btn btn-primary w-100" [disabled]="workerForm.invalid">
+      Registrar
+    </button>
+  </form>
+</div>

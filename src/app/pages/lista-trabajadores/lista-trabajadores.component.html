@@ -1,0 +1,60 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-4">Lista de Trabajadores</h2>
+
+  <!-- Filtro por Rubro -->
+  <div class="mb-4">
+    <label for="rubro" class="form-label">Filtrar por Rubro</label>
+    <select [(ngModel)]="selectedRubro" class="form-select" (ngModelChange)="filterWorkers()">
+      <option value="" disabled selected>Selecciona un rubro</option>
+      <option value="Construcción">Construcción</option>
+      <option value="Doméstica">Doméstica</option>
+      <option value="Soldador">Soldador</option>
+      <option value="Carpintería">Carpintería</option>
+      <option value="Electricidad">Electricidad</option>
+      <option value="Plomería">Plomería</option>
+      <option value="Jardineria">Jardinería</option>
+      <option value="Veterinaria">Veterinaria</option>
+      <option value="Tramitador">Tramitador</option>
+      <option value="Transporte">Transporte</option>
+      <option value="Gastronomía">Gastronomía</option>
+      <option value="Comercio">Comercio</option>
+      <option value="Educación">Educación</option>
+      <option value="Tecnología">Tecnología</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4"  *ngFor="let worker of filteredWorkers">
+      <div class="card h-100 p-3">
+        <div class="row">
+          <!-- Imagen del trabajador -->
+          <div class="col-4">
+            <img 
+              [src]="worker.imagen || 'assets/default-worker.jpg'" 
+              class="img-fluid worker-photo" 
+              alt="Foto del trabajador"
+              style="width: 150px; height: 150px; object-fit: cover; border-radius: 8px;"
+            />
+          </div>
+        
+          <!-- Datos del trabajador -->
+          <div class="col-8">
+            <h5 class="card-title">{{ worker.nombre }}</h5>
+            <p><strong>Rubro:</strong> {{ worker.rubro }}</p>
+            <p><strong>Edad:</strong> {{ worker.edad }}</p>
+            <p><strong>Teléfono:</strong> {{ worker.telefono }}</p>
+            <p><strong>Contacto:</strong> {{ worker.contacto }}</p>
+            <p><strong>Habilidades:</strong> {{ worker.habilidades }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div *ngIf="filteredWorkers.length === 0">
+    <p>No se encontraron trabajadores para el rubro seleccionado.</p>
+  </div>
+</div>
+
+  
